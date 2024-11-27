@@ -34,7 +34,7 @@ app.get("/favicon.ico", (req, res) => {
 });
 
 // Routes
-app.use("/api/calculator", calculatorRoutes);
+app.use("/api", calculatorRoutes);
 
 // Catch-all route for undefined routes
 app.get("*", (req, res) => {

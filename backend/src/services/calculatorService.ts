@@ -15,8 +15,8 @@ export class CalculatorService {
   // Calculate Combined Probability
   static combinedWith(a: number, b: number): number {
     if (!this.validateProbability(a) || !this.validateProbability(b)) {
-      logger.error("Invalid probability");
-      throw new Error("Invalid probability");
+      logger.error("Invalid probability input");
+      throw new Error("Invalid probability input");
     }
     const result = a * b;
     this.logCalculation("Combined", a, b, result);
@@ -27,8 +27,8 @@ export class CalculatorService {
   // Calculate Either Probability
   static either(a: number, b: number): number {
     if (!this.validateProbability(a) || !this.validateProbability(b)) {
-      logger.error("Invalid probability");
-      throw new Error("Invalid probability");
+      logger.error("Invalid probability input");
+      throw new Error("Invalid probability input");
     }
     const result = a + b - a * b;
     this.logCalculation("Either", a, b, result);

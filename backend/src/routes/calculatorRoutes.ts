@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { CalculatorController } from "./controllers/calculatorController";
+import { CalculatorController } from "../controllers/calculatorController";
 
 const router = Router();
 
@@ -11,7 +11,5 @@ router.get("/", (req, res) => {
 // Routes
 router.post("/combined", CalculatorController.combinedWith);
 router.post("/either", CalculatorController.either);
-router.post("/atLeast", CalculatorController.atLeast);
-router.post("/exactly", CalculatorController.exactly);
 
 export default router;

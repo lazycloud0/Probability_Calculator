@@ -1,22 +1,3 @@
-{"level":"info","message":"2024-11-28T11:34:02.830Z - Type: Combined, A: 0.5, B: 0.5, Result: 0.25"}
-{"level":"info","message":"Combined"}
-{"level":"error","message":"Invalid probability"}
-{"level":"info","message":"2024-11-28T11:34:02.880Z - Type: Either, A: 0.5, B: 0.5, Result: 0.75"}
-{"level":"info","message":"Either"}
-{"level":"error","message":"Invalid probability"}
-{"level":"info","message":"2024-11-28T11:37:31.338Z - Type: Combined, A: 0.5, B: 0.5, Result: 0.25"}
-{"level":"info","message":"Combined"}
-{"level":"error","message":"Invalid probability input"}
-{"level":"info","message":"2024-11-28T11:37:31.370Z - Type: Either, A: 0.5, B: 0.5, Result: 0.75"}
-{"level":"info","message":"Either"}
-{"level":"error","message":"Invalid probability input"}
-{"level":"error","message":"Invalid probability input"}
-{"level":"error","message":"Invalid probability input"}
-{"level":"error","message":"Invalid probability input"}
-{"level":"error","message":"Invalid probability input"}
-{"level":"error","message":"Invalid probability input"}
-{"level":"error","message":"Invalid probability input"}
-{"level":"error","message":"Invalid probability input"}
 {"level":"info","message":"2024-11-28T20:00:14.492Z - Type: Combined, A: 0.5, B: 0.5, Result: 0.25"}
 {"level":"info","message":"Combined"}
 {"level":"info","message":"2024-11-28T20:00:18.324Z - Type: Combined, A: 0.5, B: 0.5, Result: 0.25"}

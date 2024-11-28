@@ -1,0 +1,110 @@
+import React, { useState } from "react";
+//import { ApiService } from '../services/apiService';
+import axios from "axios";
+
+interface CalculationResult {
+  result: number;
+}
+
+const ProbabilityCalculator: React.FC = () => {
+  const [probabilityA, setProbabilityA] = useState<string>("");
+  const [probabilityB, setProbabilityB] = useState<string>("");
+  const [calculationType, setCalculationType] = useState<"combined" | "either">(
+    "combined"
+  );
+  const [result, setResult] = useState<number | null>(null);
+  const [error, setError] = useState<string>("");
+
+  const handleCalculate = async () => {
+    // Reset previous error and result
+    setError("");
+    setResult(null);
+
+    // Validate inputs
+    const a = parseFloat(probabilityA);
+    const b = parseFloat(probabilityB);
+
+    if (isNaN(a) || isNaN(b) || a < 0 || a > 1 || b < 0 || b > 1) {
+      setError("Please enter valid probabilities between 0 and 1");
+      return;
+    }
+
+    try {
+      const endpoint =
+        calculationType === "combined" ? "/api/combined" : "/api/either";
+
+      const response = await axios.post<CalculationResult>(
+        `http://localhost:5000${endpoint}`,
+        { a, b }
+      );
+      setResult(response.data.result);
+    } catch (err: any) {
+      setError(err.response?.data?.error || "An error occurred");
+    }
+  };
+
+  return (
+    <div className="max-w-md mx-auto p-6 bg-white rounded shadow-md">
+      <h2 className="text-2xl mb-4 text-center">Probability Calculator</h2>
+
+      <div className="mb-4">
+        <label className="block mb-2">Probability A:</label>
+        <input
+          type="number"
+          value={probabilityA}
+          onChange={(e) => setProbabilityA(e.target.value)}
+          step="0.01"
+          min="0"
+          max="1"
+          className="w-full p-2 border rounded"
+        />
+      </div>
+
+      <div className="mb-4">
+        <label className="block mb-2">Probability B:</label>
+        <input
+          type="number"
+          value={probabilityB}
+          onChange={(e) => setProbabilityB(e.target.value)}
+          step="0.01"
+          min="0"
+          max="1"
+          className="w-full p-2 border rounded"
+        />
+      </div>
+
+      <div className="mb-4">
+        <label className="block mb-2">Calculation Type:</label>
+        <select
+          value={calculationType}
+          onChange={(e) =>
+            setCalculationType(e.target.value as "combined" | "either")
+          }
+          className="w-full p-2 border rounded"
+        >
+          <option value="combined">Combined With (P(A)P(B))</option>
+          <option value="either">Either (P(A) + P(B) - P(A)P(B))</option>
+        </select>
+      </div>
+
+      <button
+        onClick={handleCalculate}
+        className="w-full p-2 bg-blue-500 text-white rounded hover:bg-blue-600"
+      >
+        Calculate
+      </button>
+
+      {error && (
+        <div className="mt-4 p-2 bg-red-100 text-red-700 rounded">{error}</div>
+      )}
+
+      {result !== null && (
+        <div className="mt-4 p-2 bg-green-100 text-green-700 rounded">
+          Result: {result.toFixed(4)}
+        </div>
+      )}
+    </div>
+  );
+};
+
+export default ProbabilityCalculator;

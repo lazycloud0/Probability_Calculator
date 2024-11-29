@@ -28,3 +28,7 @@
 {"level":"info","message":"Either"}
 {"level":"info","message":"2024-11-28T20:06:03.993Z - Type: Combined, A: 0.55, B: 0.9, Result: 0.49500000000000005"}
 {"level":"info","message":"Combined"}
+{"level":"info","message":"2024-11-29T11:07:53.518Z - Type: Combined, A: 0.7, B: 0.4, Result: 0.27999999999999997"}
+{"level":"info","message":"Combined"}
+{"level":"info","message":"2024-11-29T11:07:56.453Z - Type: Either, A: 0.7, B: 0.4, Result: 0.8200000000000001"}
+{"level":"info","message":"Either"}

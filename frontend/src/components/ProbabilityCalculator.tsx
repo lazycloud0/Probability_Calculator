@@ -43,11 +43,13 @@ const ProbabilityCalculator: React.FC = () => {
   };
 
   return (
-    <div className="max-w-md mx-auto p-6 bg-white rounded shadow-md">
-      <h2 className="text-2xl mb-4 text-center" >Probability Calculator</h2>
+    <div className="max-w-md mx-auto mt-8 p-6 bg-white rounded-lg shadow-md font-sans text-gray-700">
+      <h2 className="text-2xl mb-4 text-center">Probability Calculator</h2>
 
       <div className="mb-4">
-        <label className="block mb-2" htmlFor="probabilityA">Probability A:</label>
+        <label className="block mb-2" htmlFor="probabilityA">
+          Probability A:
+        </label>
         <input
           id="probabilityA"
           type="number"
@@ -56,12 +58,14 @@ const ProbabilityCalculator: React.FC = () => {
           step="0.01"
           min="0"
           max="1"
-          className="w-full p-2 border rounded"
+          className="w-full p-2 border rounded-lg"
         />
       </div>
 
       <div className="mb-4">
-        <label className="block mb-2" htmlFor="probabilityB">Probability B:</label>
+        <label className="block mb-2" htmlFor="probabilityB">
+          Probability B:
+        </label>
         <input
           id="probabilityB"
           type="number"
@@ -70,19 +74,21 @@ const ProbabilityCalculator: React.FC = () => {
           step="0.01"
           min="0"
           max="1"
-          className="w-full p-2 border rounded"
+          className="w-full p-2 border rounded-lg"
         />
       </div>
 
       <div className="mb-4">
-        <label className="block mb-2" htmlFor="calculationType">Calculation Type:</label>
+        <label className="block mb-2" htmlFor="calculationType">
+          Calculation Type:
+        </label>
         <select
           id="calculationType"
           value={calculationType}
           onChange={(e) =>
             setCalculationType(e.target.value as "combined" | "either")
           }
-          className="w-full p-2 border rounded"
+          className="w-full p-2 border rounded-lg"
         >
           <option value="combined">Combined With (P(A)P(B))</option>
           <option value="either">Either (P(A) + P(B) - P(A)P(B))</option>
@@ -91,13 +97,15 @@ const ProbabilityCalculator: React.FC = () => {
 
       <button
         onClick={handleCalculate}
-        className="w-full p-2 bg-blue-500 text-white rounded hover:bg-blue-600"
+        className="w-full p-2 bg-orange-500 text-white rounded-md hover:bg-orange-600 font-sans"
       >
         Calculate
       </button>
 
       {error && (
-        <div className="mt-4 p-2 bg-red-100 text-red-700 rounded">{error}</div>
+        <div className="mt-4 p-2 bg-red-100 text-red-700 rounded-md">
+          {error}
+        </div>
       )}
 
       {result !== null && (

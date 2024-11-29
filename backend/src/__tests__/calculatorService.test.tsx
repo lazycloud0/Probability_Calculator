@@ -1,5 +1,5 @@
 // src/services/__tests__/calculatorService.test.ts
-import { CalculatorService } from "../calculatorService";
+import { CalculatorService } from "../services/calculatorService";
 
 describe("CalculatorService", () => {
   describe("validateProbability", () => {

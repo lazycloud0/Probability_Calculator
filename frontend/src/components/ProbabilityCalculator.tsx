@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-//import { ApiService } from '../services/apiService';
 import axios from "axios";
 
 interface CalculationResult {
@@ -45,11 +44,12 @@ const ProbabilityCalculator: React.FC = () => {
 
   return (
     <div className="max-w-md mx-auto p-6 bg-white rounded shadow-md">
-      <h2 className="text-2xl mb-4 text-center">Probability Calculator</h2>
+      <h2 className="text-2xl mb-4 text-center" >Probability Calculator</h2>
 
       <div className="mb-4">
-        <label className="block mb-2">Probability A:</label>
+        <label className="block mb-2" htmlFor="probabilityA">Probability A:</label>
         <input
+          id="probabilityA"
           type="number"
           value={probabilityA}
           onChange={(e) => setProbabilityA(e.target.value)}
@@ -61,8 +61,9 @@ const ProbabilityCalculator: React.FC = () => {
       </div>
 
       <div className="mb-4">
-        <label className="block mb-2">Probability B:</label>
+        <label className="block mb-2" htmlFor="probabilityB">Probability B:</label>
         <input
+          id="probabilityB"
           type="number"
           value={probabilityB}
           onChange={(e) => setProbabilityB(e.target.value)}
@@ -74,8 +75,9 @@ const ProbabilityCalculator: React.FC = () => {
       </div>
 
       <div className="mb-4">
-        <label className="block mb-2">Calculation Type:</label>
+        <label className="block mb-2" htmlFor="calculationType">Calculation Type:</label>
         <select
+          id="calculationType"
           value={calculationType}
           onChange={(e) =>
             setCalculationType(e.target.value as "combined" | "either")

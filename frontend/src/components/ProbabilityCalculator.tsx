@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import axios from "axios";
+import { calculateCombined, calculateEither } from "../services/apiService";
 
 interface CalculationResult {
   result: number;
@@ -29,14 +29,13 @@ const ProbabilityCalculator: React.FC = () => {
     }
 
     try {
-      const endpoint =
-        calculationType === "combined" ? "/api/combined" : "/api/either";
-
-      const response = await axios.post<CalculationResult>(
-        `http://localhost:5000${endpoint}`,
-        { a, b }
-      );
-      setResult(response.data.result);
+      let response: CalculationResult;
+      if (calculationType === "combined") {
+        response = (await calculateCombined(a, b)) as CalculationResult;
+      } else {
+        response = (await calculateEither(a, b)) as CalculationResult;
+      }
+      setResult(response.result);
     } catch (err: any) {
       setError(err.response?.data?.error || "An error occurred");
     }

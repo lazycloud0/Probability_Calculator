@@ -20,7 +20,6 @@ export class CalculatorService {
     }
     const result = a * b;
     this.logCalculation("Combined", a, b, result);
-    logger.info("Combined", a, b, result);
     return result;
   }
 
@@ -32,7 +31,6 @@ export class CalculatorService {
     }
     const result = a + b - a * b;
     this.logCalculation("Either", a, b, result);
-    logger.info("Either", a, b, result);
     return result;
   }
 

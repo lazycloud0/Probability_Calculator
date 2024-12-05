@@ -1,38 +1,19 @@
 {"level":"info","message":"2024-11-28T20:00:14.492Z - Type: Combined, A: 0.5, B: 0.5, Result: 0.25"}
-{"level":"info","message":"Combined"}
 {"level":"info","message":"2024-11-28T20:00:18.324Z - Type: Combined, A: 0.5, B: 0.5, Result: 0.25"}
-{"level":"info","message":"Combined"}
 {"level":"info","message":"2024-11-28T20:00:53.786Z - Type: Combined, A: 0.5, B: 0.5, Result: 0.25"}
-{"level":"info","message":"Combined"}
 {"level":"info","message":"2024-11-28T20:01:45.037Z - Type: Combined, A: 0.5, B: 0.5, Result: 0.25"}
-{"level":"info","message":"Combined"}
 {"level":"info","message":"2024-11-28T20:04:08.298Z - Type: Either, A: 0.5, B: 0.5, Result: 0.75"}
-{"level":"info","message":"Either"}
 {"level":"info","message":"2024-11-28T20:04:12.754Z - Type: Either, A: 0.5, B: 0.5, Result: 0.75"}
-{"level":"info","message":"Either"}
 {"level":"info","message":"2024-11-28T20:04:48.261Z - Type: Either, A: 0.5, B: 0.5, Result: 0.75"}
-{"level":"info","message":"Either"}
 {"level":"info","message":"2024-11-28T20:04:52.658Z - Type: Either, A: 0.5, B: 0.5, Result: 0.75"}
-{"level":"info","message":"Either"}
 {"level":"info","message":"2024-11-28T20:05:21.498Z - Type: Either, A: 0, B: 0.5, Result: 0.5"}
-{"level":"info","message":"Either"}
 {"level":"info","message":"2024-11-28T20:05:26.140Z - Type: Combined, A: 0, B: 0.5, Result: 0"}
-{"level":"info","message":"Combined"}
 {"level":"info","message":"2024-11-28T20:05:29.139Z - Type: Combined, A: 0, B: 1, Result: 0"}
-{"level":"info","message":"Combined"}
 {"level":"info","message":"2024-11-28T20:05:33.108Z - Type: Combined, A: 1, B: 1, Result: 1"}
-{"level":"info","message":"Combined"}
 {"level":"info","message":"2024-11-28T20:05:44.645Z - Type: Combined, A: 1, B: 0.9, Result: 0.9"}
-{"level":"info","message":"Combined"}
 {"level":"info","message":"2024-11-28T20:06:00.784Z - Type: Either, A: 0.55, B: 0.9, Result: 0.9550000000000001"}
-{"level":"info","message":"Either"}
 {"level":"info","message":"2024-11-28T20:06:03.993Z - Type: Combined, A: 0.55, B: 0.9, Result: 0.49500000000000005"}
-{"level":"info","message":"Combined"}
 {"level":"info","message":"2024-11-29T11:07:53.518Z - Type: Combined, A: 0.7, B: 0.4, Result: 0.27999999999999997"}
-{"level":"info","message":"Combined"}
 {"level":"info","message":"2024-11-29T11:07:56.453Z - Type: Either, A: 0.7, B: 0.4, Result: 0.8200000000000001"}
-{"level":"info","message":"Either"}
 {"level":"info","message":"2024-11-29T11:50:41.418Z - Type: Combined, A: 0.5, B: 0.5, Result: 0.25"}
-{"level":"info","message":"Combined"}
 {"level":"info","message":"2024-11-29T11:50:45.173Z - Type: Either, A: 0.5, B: 0.5, Result: 0.75"}
-{"level":"info","message":"Either"}

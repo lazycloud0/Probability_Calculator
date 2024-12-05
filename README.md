@@ -16,6 +16,10 @@ This project was designed to provide a simple and efficient way to calculate pro
 - Logging of calculations
 - Simple, clean UI
 
+## Tech Stack
+
+Node.js, Express, React, TypeScript, Tailwind CSS, Axios, Jest, Winston.
+
 ## Setup Instructions
 
 ### Prerequisites
@@ -104,22 +108,26 @@ For example:
 
 ### Frontend
 
-- **src/App.tsx**: Main React component.
-- **src/components**: Directory containing React components.
+- **App.tsx**: Main React component.
+- **components**: Directory containing React components.
   - **ProbabilityCalculator.tsx**: Component for the probability calculator.
-- **src/styles**: Directory containing CSS files.
+- **styles**: Directory containing CSS files.
   - **index.css**: Main CSS file.
-- **src/setupTests.ts**: Setup file for Jest and testing-library configurations.
+- **setupTests.ts**: Setup file for Jest and testing-library configurations.
 
 ### Why This Setup?
 
-1. **Express Framework**: Chosen for its simplicity and flexibility in building server-side applications.
-2. **React**: Component-based architecture for a dynamic UI.
-3. **Modular Structure**: The project is organized into routes, controllers, and services to promote separation of concerns and maintainability.
-4. **Helmet**: Used for setting various HTTP headers to enhance security.
-5. **CORS**: Configured to allow requests from the frontend running on `http://localhost:3000`.
-6. **Body-Parser**: Middleware to parse incoming request bodies in JSON format.
-7. **Environment Variables**: Managed using `dotenv` to keep configuration separate from the codebase.
+**Express Framework**: Chosen for its simplicity and flexibility in building server-side applications.
+**React**: Component-based architecture for a dynamic UI.
+**Modular Structure**: The project is organized into routes, controllers, and services to promote separation of concerns and maintainability.
+**Helmet**: Used for setting various HTTP headers to enhance security.
+**CORS**: Configured to allow requests from the frontend running on `http://localhost:3000`.
+**Body-Parser**: Middleware to parse incoming request bodies in JSON format.
+**Environment Variables**: Managed using `dotenv` to keep configuration separate from the codebase.
+**Tailwind CSS**: For efficient and customizable styling using utility classes.
+**Axios**: For making HTTP requests with a simple and promise-based API.
+**Jest**: JavaScript testing framework for comprehensive and efficient testing.
+**Winston**: For versatile and configurable logging.
 
 ### Future Improvements
 

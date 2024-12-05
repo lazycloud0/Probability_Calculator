@@ -16,4 +16,6 @@
 {"level":"info","message":"2024-11-29T11:07:53.518Z - Type: Combined, A: 0.7, B: 0.4, Result: 0.27999999999999997"}
 {"level":"info","message":"2024-11-29T11:07:56.453Z - Type: Either, A: 0.7, B: 0.4, Result: 0.8200000000000001"}
 {"level":"info","message":"2024-11-29T11:50:41.418Z - Type: Combined, A: 0.5, B: 0.5, Result: 0.25"}
-{"level":"info","message":"2024-11-29T11:50:45.173Z - Type: Either, A: 0.5, B: 0.5, Result: 0.75"}
+{"level":"info","message":"2024-11-29T11:50:45.173Z - Type: Either, A: 0.5, B: 0.5, Result: 0.75"}{"level":"info","message":"2024-12-05T20:34:01.732Z - Type: Combined, A: 0.5, B: 0.5, Result: 0.25"}
+{"level":"info","message":"2024-12-05T20:34:05.944Z - Type: Either, A: 0.5, B: 0.5, Result: 0.75"}
+{"level":"info","message":"2024-12-05T20:58:22.281Z - Type: Combined, A: 0.5, B: 0.5, Result: 0.25"}
